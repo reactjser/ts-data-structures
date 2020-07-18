@@ -1,0 +1,19 @@
+{
+  "name": "ts-data-structures",
+  "version": "1.0.0",
+  "description": "data-structures",
+  "main": "./build/index.js",
+  "scripts": {
+    "dev:build": "tsc -w",
+    "dev:start": "nodemon ./build/index.js",
+    "start": "tsc && concurrently npm:dev:*"
+  },
+  "keywords": [],
+  "author": "reactjser <reactjser@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.7"
+  }
+}
