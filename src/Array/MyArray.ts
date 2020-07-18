@@ -126,6 +126,20 @@ class MyArray<T> {
   }
 
   /**
+   * 获取索引为0位置的元素
+   */
+  public getFirst(): T {
+    return this.get(0);
+  }
+
+  /**
+   * 获取数组最后的元素
+   */
+  public getLast(): T {
+    return this.get(this.size - 1);
+  }
+
+  /**
    * 修改index索引位置的元素为e
    * @param index 索引
    * @param e 新元素

@@ -1,11 +1,11 @@
-import MyArray from './Array/MyArray';
+import ArrayStack from './Stack/ArrayStack';
 
-const arr = new MyArray<number>();
-for (let i = 0; i < 10; i++) {
-  arr.addLast(i);
+const stack = new ArrayStack<number>();
+
+for (let i = 0; i < 5; i++) {
+  stack.push(i);
+  console.log(stack.toString());
 }
 
-console.log(arr.toString());
-
-arr.add(1, 100);
-console.log(arr.toString());
+stack.pop();
+console.log(stack.toString());
