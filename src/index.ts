@@ -1,11 +1,12 @@
-import ArrayStack from './Stack/ArrayStack';
+import ArrayQueue from './Queue/ArrayQueue';
 
-const stack = new ArrayStack<number>();
+const queue = new ArrayQueue<number>();
 
-for (let i = 0; i < 5; i++) {
-  stack.push(i);
-  console.log(stack.toString());
+for (let i = 0; i < 10; i++) {
+  queue.enqueue(i);
+  console.log('+', queue.toString());
+  if (i % 3 === 2) {
+    queue.dequeue();
+    console.log('-', queue.toString());
+  }
 }
-
-stack.pop();
-console.log(stack.toString());
